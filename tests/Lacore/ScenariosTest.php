@@ -38,7 +38,11 @@ class ScenariosTest extends \PHPUnit_Framework_TestCase
         $this->receiptImage = realpath("../../data/receipt.jpg");
 
         date_default_timezone_set("UTC");
-        Settings::configure(["username" => null, "password" => null]);
+
+        $username = getenv("LACORE_ADMIN_USERNAME");
+        $password = getenv("LACORE_ADMIN_PASSWORD");
+
+        Settings::configure(["username" => $username, "password" => $password ]);
 
         $this->user = Fixtures::createAdminUser();
 
