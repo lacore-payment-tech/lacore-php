@@ -1,6 +1,6 @@
 {
   "name": "lacore-payment-tech/lacore-php",
-  "version": "1.0.4",
+  "version": "1.0.1",
   "description": "A PHP HTTP Client conforming to the HAL hypermedia type for the Lacore processing API",
   "license": "Apache2",
   "authors": [
