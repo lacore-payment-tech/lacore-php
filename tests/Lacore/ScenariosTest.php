@@ -154,7 +154,7 @@ class ScenariosTest extends \PHPUnit_Framework_TestCase
     {
         $transfer = $this->testDebitTransfer();
         $transfer = $transfer->reverse(50);
-        self::assertEquals($transfer->state, "PENDING", "Reverse not in pending state");
+        self::assertEquals($transfer->state, "SUCCEEDED", "Reverse is in succeeded state");
     }
 
     public function testVoidAuthorization()
